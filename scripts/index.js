@@ -22,15 +22,15 @@ const templateItem = cardTemplate.querySelector('.places__item');
   });
 
   return cardElement;
-}
+};
 
 // @todo: Функция удаления карточки
 function deleteCardOnPage (addCard) {
   addCard.remove();
-}
+};
 
 // @todo: Вывести карточки на страницу
 for (let card of initialCards) {
   const addCard = createCard(card, deleteCardOnPage);
   cardList.append(addCard);
-}
+};
