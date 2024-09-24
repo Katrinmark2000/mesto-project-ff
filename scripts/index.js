@@ -14,6 +14,7 @@ const templateItem = cardTemplate.querySelector('.places__item');
   const cardTitle = cardElement.querySelector('.card__description');
 
   cardImage.src = item.link;
+  cardImage.alt = item.name;
   cardTitle.textContent = item.name;
 
   const cardDeleteButton = cardElement.querySelector('.card__delete-button');
